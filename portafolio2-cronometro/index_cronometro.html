@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos_cronometro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Cronometro</title>
+</head>
+<body>
+    <!-- Contenedor de cronometro -->
+        <div class="container">
+            <div>
+                <img src="/imagenes/cronometro.png" alt="" srcset="" class="imagen">
+            </div>
+            <h1 class="title">CRONÓMETRO</h1>
+
+            <!-- Numeros -->
+            <div class="container_numeros">
+                <h2> <span id="minutos">00</span>: <span id="segundos">00</span>: <span id="milisegundos">00</span> <h2>
+            </div>
+
+            <!-- Botones -->
+            <div class="container_botones">
+                <button id="btnIniciar" class="container_botones_play btn">
+                    <i class="fa-solid fa-play icon"></i>
+                </button>
+                <button id="btnPausar" class="container_botones_pause btn">
+                    <i class="fa-solid fa-pause icon"></i>
+                </button>
+                <button id="btnReiniciar" class="container_botones_stop btn">
+                    <i class="fa-solid fa-stop icon"></i>
+                </button>
+                <button id="btnVueltas" class="container_botones_stopwatch btn">
+                    <i class="fa-sharp fa-solid fa-stopwatch icon"></i>
+                </button>
+            </div>
+
+            
+
+            <!-- vueltas -->
+            <div class="container_vueltas">
+                <hr class="line">
+                <ul id="listaDeVueltas" class="container_vueltas_lista">
+                    
+                </ul>
+            </div>
+        </div>
+</body>
+<script src="cronometro.js"></script>
+</html>
