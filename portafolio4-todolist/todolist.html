@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="todolistestilos.css">
+</head>
+<body>
+
+    <!-- Titulo -->
+    <header class="container_header">
+        <img src="/imagenes/todolist.png" width="250px" alt="">
+        <div class="cajaImagen">
+            <h1>TO DO <span>LIST.</span></h1>
+            <p>Esta herramienta te permitirá crear tus tareas pendientes por hacer, puedes también colocar hora y el día para que puedas estar más atento a tus actividades</p>
+        </div>
+    </header>
+        
+        <br>
+
+    <!-- Crear las tareas -->
+    <main class="boxColumnas">
+        <section class="columnaUno">     
+            <h2 class="titleTareas">Crea tu tarea</h2>                
+        
+            <div class="caja_creartarea">
+                    <div class="input_creartarea">
+                        <input id="descripcionTarea" type="text" placeholder="Ingresa tu tarea" class="cajaInput">
+                    </div>
+                    <div class="input_creartarea">
+                        <input id="horaTarea"  type="time" class="cajaInput" >
+                    </div>
+                    <div class="input_creartarea">
+                        <input id="fechaTarea"  type="date" class="cajaInput" >  
+                    </div>
+                </div>
+        
+            <div class="caja_boton">
+                <button id="agregar" class="boton" onclick="agregarTarea()" >Agregar tarea</button>
+            </div>
+        </section>
+
+    
+        <!-- Ver las tareas -->
+        <section class="columnaDos">
+            <div class="title">
+                <h2 class="titleTareas">Ver tus tareas</h2>
+            </div>
+
+            <div class="registro_tareas">
+
+                <ul id="verTareas" >  
+        
+                </ul>
+            </div>
+
+            <div class="caja_boton">        
+                <button id="agregar" class="boton" onclick="limpiarTarea()">Limpiar tarea</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="todolistcode.js"></script>
+<script>
+    let menu = document.getElementById("menu");
+    let botonBurger = document.getElementById("btnBurger");
+
+    botonBurger.addEventListener("click", burgerOpen);
+
+    function burgerOpen(){
+        menu.classList.toggle('active');
+    };
+
+</script>
+</html>

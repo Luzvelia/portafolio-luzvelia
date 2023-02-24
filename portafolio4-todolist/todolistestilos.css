@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+    --colorPrincipal: #79bcfa;
+    --colorSegundario: #ee88e9;
+    --vistaBurger: block;
+    --vistaEliminar: block;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #ffffff;
+    opacity: 1;
+    background-image: radial-gradient(#9ee2f3 1.6500000000000001px, #ffffff 1.6500000000000001px);
+    background-size: 33px 33px;
+}
+
+/* Titulo y descripcion */
+.container{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    text-align: start;
+}
+
+.container_header{
+    display: flex;
+    align-items: center;
+    
+}
+
+.cajaImagen{
+    text-align: start;
+    align-items: flex-start;
+    max-width: 40%;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 3.5rem;
+    color: var(--colorPrincipal);
+}
+
+span{
+    color: #ffffffdf;
+    background-color: var(--colorSegundario);
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.2rem;
+    color: #777474;
+}
+
+
+/* Columnas con tareas */
+
+.boxColumnas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+}
+
+.titleTareas{
+    color: var(--colorPrincipal);
+    font-size: 2.5rem;
+    margin: 10px 20px;
+    padding-bottom:  20px
+}
+
+.columnaUno{
+    margin: auto;
+    width: 70%;
+    background-color: #cce0bc7c;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    
+}
+
+.columnaDos{
+    margin: auto;
+    width: 70%;
+    background-color:  #cce0bc7c;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.caja_creartarea{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.input_creartarea{
+    padding-left: 20px;   
+}
+.cajaInput{
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    color: #777474; 
+    width: 50%;
+}
+
+.boton{
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--colorPrincipal);
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    margin: 30px 0px;
+    box-shadow: 5px 5px 8px #5c5c5c9c;
+    text-decoration: none;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background-color: var(--colorSegundario);
+    transform: scale(1.1);
+}
+
+.botonVolver{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.caja_tareas{   
+    background-color: white;
+    color: #777474;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    padding: 20px 20px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.check{
+    margin-right: 20px;
+}
+
+
+
