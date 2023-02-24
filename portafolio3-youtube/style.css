@@ -40,8 +40,8 @@ body{
 }
 
 hr{
-   margin: 10px 0px;
-   border-color: rgba(253, 250, 250, 0.432);
+    margin: 10px 0px;
+    border-color: rgba(253, 250, 250, 0.432);
 }
 
 .navegacion{
@@ -52,7 +52,6 @@ hr{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 500;
-  
 }
 
 .barraHome{
@@ -61,8 +60,7 @@ hr{
     padding: 10px 15px;
     font-size: 15px;
     color: #0d0d0dc2;
-    gap: 1em;
-   
+    gap: 1em;  
 }
 
 .barraHome>img{
@@ -82,8 +80,8 @@ hr{
 
 .barraNavegador{
     display: flex;
-   justify-content: space-between;
-   padding: 10px 10px 10px 150px;
+    justify-content: space-between;
+    padding: 10px 10px 10px 150px;
 }
 
 
@@ -107,8 +105,7 @@ hr{
     border-radius: 30px;
     width: 80%;
     height: 35px;
-    border: solid 1px rgb(184, 185, 187);
-  
+    border: solid 1px rgb(184, 185, 187); 
 }
 
 .buscador>input{
@@ -161,9 +158,7 @@ hr{
 .barraUsuario{
     display: flex;
     justify-content: space-between;
-    padding: 0px 5px;
- 
-   
+    padding: 0px 5px
 }
 
 .barraUsuario>img{
@@ -230,7 +225,6 @@ hr{
 
 .btn-flecha{
     padding: 5px;
-  
 }
 
 .btn-flecha:hover{
