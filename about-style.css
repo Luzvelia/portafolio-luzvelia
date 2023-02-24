@@ -1,0 +1,751 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+    --colorPrincipal: #D6530A;
+    --colorSegundario: rgb(92, 92, 92);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    width: 60%;
+}
+
+.bigBox{
+    margin-bottom: 50px;
+}
+
+/* Menu de navegacion */
+.burger{
+    display: none;
+}
+
+.boxMenu{
+    display: flex;
+    justify-content: space-between ;
+    background-color: #d8d7d6ea;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100px;
+    z-index: 2;
+
+}
+
+.listaMenu{
+    display: flex;
+    justify-items: end;
+    flex-direction: row;
+    text-align: right;
+    align-items: center;
+}
+
+.listaMenu > a {
+    text-decoration: none;
+}
+
+.lista{
+    margin-right: 20px;
+    color: var(--colorSegundario);
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.lista:hover{
+    background-color: #fce3d650;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+
+/* Titulo sobre mi  */
+.boxTitle{
+    margin: 150px 0 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-size: 2.5rem;
+    margin: 0;
+    color: var(--colorSegundario);
+    text-decoration: underline;
+}
+
+/* Infomación sobre mi */
+.boxInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.imgLuz{
+    width: 400px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.informacion{
+    margin-left: 50px;
+}
+
+.titleNombre{
+    font-size: 3.5rem;
+    margin: 0;
+    color: var(--colorSegundario);
+}
+
+#miNombre{
+    color: var(--colorPrincipal);
+}
+
+.textoEstudiante{
+    color: var(--colorSegundario);
+    font-size: 30px;
+    margin: 5px;
+}
+
+.parrafo{
+    color: var(--colorSegundario);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.boxIcon{
+    margin-top: 30px;
+}
+
+.boxIcon > a{
+    text-decoration: none;
+}
+
+
+/*Iconos de redes sociales*/
+
+.imgIcon{
+    width: 40px;
+    margin-right: 30px;
+}
+
+.imgIcon:hover{
+    transform: scale(1.1);
+}
+
+/* Caja de mis Conocimientos */
+
+.titleConocimientos{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 20px;
+    color: var(--colorSegundario);
+    text-decoration: underline;
+}
+
+.boxConocimientos{
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #ebe6e2ea;
+}
+
+.Conocimiento{
+    color: var(--colorSegundario);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.cardConocimiento{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxPorcentaje{
+    position: relative;
+    border: 1px solid var(--colorPrincipal);
+    border-radius: 20px;
+}
+
+.cajaPorc{
+    position: relative;
+    width: 0;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--colorPrincipal)
+}
+
+/* Animacion de porcentajes */
+
+#porcentajeHtml{
+    animation: html-barra 8s forwards;
+}
+
+@keyframes html-barra{
+    100%{
+        width: 40%;
+    }
+}
+
+#porcentajeCSS{
+    animation: css-barra 8s forwards;
+}
+
+@keyframes css-barra{
+    100%{
+        width: 45%;
+    }
+}
+
+
+#porcentajeJS{
+    animation: js-barra 8s forwards;
+}
+
+@keyframes js-barra{
+    100%{
+        width: 35%;
+    }
+}
+
+#porcentajeTailwind{
+    animation: tailwind-barra 8s forwards;
+}
+
+@keyframes tailwind-barra{
+    100%{
+        width: 35%;
+    }
+}
+
+#porcentajeSASS{
+    animation: sass-barra 8s forwards;
+}
+
+@keyframes sass-barra{
+    100%{
+        width: 40%;
+    }
+}
+
+/* Lenguajes por aprender */
+.titleAprender{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    font-size: 18px;
+    color: var(--colorSegundario);
+    text-decoration: underline;
+}
+
+.boxAprender{
+    margin: auto;
+    width: 65%;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #ebe6e2ea;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.iconAprender{
+    width: 100px;
+}
+
+.iconAprender:hover{
+    transform: scale(1.1);
+}
+
+.space{
+    margin-top: 50px;
+    
+}
+
+/* Footer */
+.footer{
+    margin-top: 50px;
+    background-color: #acaaa996;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.boxIconFooter{
+    display: flex;
+    flex-direction: row;
+}
+
+.iconFooter{
+    width: 40px;
+    margin: 0px 20px;
+}
+
+.menuFooter > ul{
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+}
+
+.menuFooter > ul > a{
+    text-decoration: none;
+}
+
+.menuFooter > ul > a > li{
+    list-style: none;
+    font-size: 18px;
+    color:var(--colorSegundario);
+    padding: 10px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px){
+    .bigBox{
+        margin-bottom: 50px;
+    }
+    
+    /* Menu de navegacion */
+    .logo > img{
+        width: 80px;
+    }
+
+    .boxMenu{
+        display: flex;
+        position: relative;
+    }
+    
+    .burger{
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        width: 30px;
+        display: block;
+        z-index: 4;
+    }
+
+    .cajaMenu.active{
+        background-color: #fff9f9ee;
+        border-bottom-left-radius: 5px;
+        z-index: 2;
+        width: 100%;
+        min-height: 80vh;
+    }
+
+    .listaMenu{
+        display: none;
+    }
+
+    .listaMenu.active{
+        display: block;
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .listaMenu > a {
+        text-decoration: none;
+        margin-top: 45px;
+    } 
+
+    .lista{
+        margin: 15px 0px;
+        color: var(--colorSegundario);
+        list-style: none;
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    .lista:hover{
+        background-color: #acaaa93f;
+        padding: 10px;
+        border-radius: 5px;
+        transform: scale(1.1);
+    }
+
+    /* Titulo sobre mi  */
+    .boxTitle{
+        margin: 50px 0 80px 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .title{
+        font-size: 2rem;
+        margin: 0;
+    }
+    
+    /* Infomación sobre mi */
+    .boxInfo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .imgLuz{
+        align-self: center;
+        width: 250px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .informacion{
+        margin-left: 20px;
+    }
+    
+    .titleNombre{
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    
+    
+    .textoEstudiante{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    
+    .parrafo{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    .boxIcon{
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .boxIcon > a{
+        text-decoration: none;
+    }
+    
+    /*Iconos de redes sociales*/
+    .imgIcon{
+        width: 40px;
+        margin-right: 30px;
+    }
+    
+    /* Caja de mis Conocimientos */
+    
+    .titleConocimientos{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+        font-size: 14px;
+    }
+    
+    .boxConocimientos{
+        margin: auto;
+        width: calc(80% - 40px);
+        border-radius: 10px;
+    }
+    
+    .Conocimiento{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .cardConocimiento{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .boxPorcentaje{
+        position: relative;
+        border-radius: 20px;
+    }
+    
+    .cajaPorc{
+        position: relative;
+        width: 0;
+        height: 15px;
+        border-radius: 10px;
+    }
+
+    /* Lenguajes por aprender */
+    .titleAprender{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    .boxAprender{
+        margin: auto;
+        max-width: 80%;
+        border-radius: 30px;
+        background-color: #ebe6e2ea;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .iconAprender{
+        width: 50px;
+        padding: 0px 2px;
+    }
+
+    .iconAprender:hover{
+        transform: scale(1.1);
+    }
+
+    /* Footer */
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    
+    .menuFooter > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        padding: 0px 2px;
+    }
+    
+    .menuFooter > ul > a > li{
+        font-size: 15px;
+    }   
+}
+
+@media (max-width: 320px){
+    .bigBox{
+        margin-bottom: 50px;
+    }
+    
+    /* Menu de navegacion */
+    .logo > img{
+        width: 80px;
+    }
+
+    .boxMenu{
+        display: flex;
+        position: relative;
+    }
+    
+    .burger{
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        width: 30px;
+        display: block;
+        z-index: 4;
+    }
+
+    .cajaMenu.active{
+        background-color: #fff9f9ee;
+        border-bottom-left-radius: 5px;
+        z-index: 2;
+        width: 100%;
+        min-height: 80vh;
+    }
+
+    .listaMenu{
+        display: none;
+    }
+
+    .listaMenu.active{
+        display: block;
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .listaMenu > a {
+        text-decoration: none;
+        margin-top: 45px;
+    } 
+
+    .lista{
+        margin: 15px 0px;
+        color: var(--colorSegundario);
+        list-style: none;
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    .lista:hover{
+        background-color: #acaaa93f;
+        padding: 10px;
+        border-radius: 5px;
+        transform: scale(1.1);
+    }
+
+    /* Titulo sobre mi  */
+    .boxTitle{
+        margin: 50px 0 80px 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .title{
+        font-size: 2rem;
+        margin: 0;
+    }
+    
+    /* Infomación sobre mi */
+    .boxInfo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .imgLuz{
+        align-self: center;
+        width: 250px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .informacion{
+        margin-left: 20px;
+    }
+    
+    .titleNombre{
+        font-size: 2rem;
+        margin: 0;
+    }
+    
+    
+    .textoEstudiante{
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    
+    .parrafo{
+        font-size: 15px;
+        line-height: 25px;
+        padding: 5px 10px;
+    }
+    
+    .boxIcon{
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .boxIcon > a{
+        text-decoration: none;
+    }
+    
+    /*Iconos de redes sociales*/
+    .imgIcon{
+        width: 40px;
+        margin-right: 30px;
+    }
+    
+    /* Caja de mis Conocimientos */
+    
+    .titleConocimientos{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+        font-size: 14px;
+    }
+    
+    .boxConocimientos{
+        margin: auto;
+        width: calc(80% - 40px);
+        border-radius: 10px;
+    }
+    
+    .Conocimiento{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .cardConocimiento{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .boxPorcentaje{
+        position: relative;
+        border-radius: 20px;
+    }
+    
+    .cajaPorc{
+        position: relative;
+        width: 0;
+        height: 15px;
+        border-radius: 10px;
+    }
+
+    /* Lenguajes por aprender */
+    .titleAprender{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    .boxAprender{
+        margin: auto;
+        max-width: 70%;
+        border-radius: 30px;
+        background-color: #ebe6e2ea;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .iconAprender{
+        width: 35px;
+        padding: 0px 2px;
+    }
+
+    .iconAprender:hover{
+        transform: scale(1.1);
+    }
+
+    /* Footer */
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    .iconFooter{
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        margin: 0px;
+    }
+
+    .menuFooter > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .menuFooter > ul > a > li{
+        font-size: 12px;
+        padding: 10px;
+        margin: 0px;
+    }
+}
+
