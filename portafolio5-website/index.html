@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <title>Proyecto de SASS</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="encabezado"> 
+        <div class="encabezado_cont">
+            <h1 class="encabezado_title">Bienvenidos a mi biografía.</h1>
+            <p class="encabezado_parrafo">Espacio de una apasionada por la tecnología y diseño</p>
+        </div>
+    </header>
+    
+    
+    <main>
+        
+    <!-- Perfil de usuario -->
+        <section class="perfil">
+            <img class="perfil_imagen" src="/portafolio5-website/images/perfil.png" width="300px">
+
+            <div class="perfil_container">
+                <h2 class="perfil_container_nombre">Luzvelia Núñez.</h2>
+                <p class="perfil_container_p-1"><b>Estudiante de Programación Web</b></p>
+                <p class="perfil_container_p">Venezolana, 28 años</p>
+
+            </div>       
+        </section>
+
+    <!-- About me -->
+        <section class="about">
+            <h3 class="about_title">Acerca de mi.</h3>
+            <hr>
+            <p class="about_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, perferendis, iusto molestiae debitis ex voluptates nemo unde vel voluptas, consequuntur eius accusantium placeat ipsum est accusamus numquam mollitia velit amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eius facilis quia autem nam deleniti, praesentium eos unde hic ipsum ab, lorem temporibus rem, totam sapiente deserunt dolorum. At, est placeat!</p>
+    
+        </section>
+
+    <br>
+    <br>
+
+    <!-- Estadisiticas -->
+        <section>
+            <div class="estadisticas">
+                <div class="estadisticas-elemento">
+                    <h3>2k</h3>
+                    <span>Seguidores</span>
+                </div>
+                <div class="estadisticas-elemento">
+                    <h3>500</h3>
+                    <span>Seguidos</span>
+                </div>
+                <div class="estadisticas-elemento">
+                    <h3>3</h3>
+                    <span>Repositorios</span>
+                </div>
+            </div>
+
+            <div class="boton">
+                <button class="boton_btn">Seguir</button>
+            </div>
+        </section>
+
+    <br>
+    <br>
+
+    <!-- Ubicacion -->
+        <section>
+            <div class="ubicacion-perfil">
+                <lord-icon class="ubicacion-perfil-location" 
+                    src="https://cdn.lordicon.com/elzslyvl.json"
+                    trigger="hover"
+                    colors="primary:#e8e230,secondary:#c76f16"
+                    style="width:100px;height:100px">
+                    
+                </lord-icon>
+                <div class="ubicacion-perfil-texto">
+                    <h2>Cali, Colombia</h2>
+                    <h3>9km Cerca</h3>
+                </div>
+            </div>
+        </section>
+        
+        <br>
+        <br>
+
+    <!-- Galeria -->
+        <section class="galeria">
+            <img src="/portafolio5-website/images/1.png" class="galeria_btn" width="30px" alt="">
+
+            <div class="galeria_container">
+                <img src="/portafolio5-website/images/imagen1.jpeg" width="180px" height="150px" alt="">
+                <img src="/portafolio5-website/images/imagen2.jpeg" width="180px" height="150px" alt="">
+                <img src="/portafolio5-website/images/imagen3.jpeg" width="180px" height="150px" alt="">
+                <img src="/portafolio5-website/images/imagen4.jpeg" width="180px" height="150px" alt="">
+                <img src="/portafolio5-website/images/imagen5.jpeg" width="180px" height="150px" alt="">
+                <img src="/portafolio5-website/images/imagen6.jpeg" width="180px" height="150px" alt="">
+            </div>
+
+            <img src="/portafolio5-website/images/2.png" class="galeria_btn" width="30px" alt="">
+        </section>
+
+        <br>
+        
+        <!-- Boton contacto -->
+        <section>
+            <div class="boton">
+                <button class="boton_btn">Contactar</button>
+            </div>
+        </section>
+
+        <br>
+        <br>
+
+        <hr class="linea_noticia">
+
+    <!-- Noticias -->
+        <section class="noticias">
+            <div>
+                <h2 class="noticias_title">Noticias.</h2>
+            </div>
+        </section>
+
+    
+        <section class="card">
+            <div class="card_container">
+                <div class="card_container_box">
+                    <img src="/portafolio5-website/images/noticia1.jpeg" class="box_img" width="200px"  alt="">
+
+                    <h3 class="box_title">Los programadores ya alucinaban con CoPilot y ChatGPT, pero ahora DeepMind va más allá con AplhaCode</h3>
+                    <p class="box_p">El sistema ya programa mejor que muchos desarrolladores humanos...</p>
+                    <a href="https://www.xataka.com/robotica-e-ia/programadores-alucinaban-copilot-chatgpt-ahora-deepmind-va-alla-aplhacode" class="box_link">LEER MÁS</a>
+                </div>
+
+                <div class="card_container_box">
+                    <img src="/portafolio5-website/images/noticia2.jpg" class="box_img" width="200px"  alt="">
+
+                    <h3 class="box_title">Google tiene claro que el futuro de la programación pasa por los robots. Y está más cerca de conseguirlo</h3>
+                    <p class="box_p">En el futuro, los robots podrán programar ellos solitos su código. O eso dicen investigadores de Google...</p>
+                    <a href="https://www.xataka.com/robotica-e-ia/robots-estan-cerca-programar-ellos-solos-google-tiene-plan-para-lograrlo" class="box_link">LEER MÁS</a>
+                
+                </div>
+
+
+                <div class="card_container_box">
+                    <img src="/portafolio5-website/images/noticia1.jpeg" class="box_img" width="200px"  alt="">
+
+                    <h3 class="box_title">Pensábamos que aprender matemáticas a través de la programación funcionaba. Estábamos equivocados</h3>
+                    <p class="box_p">Y aún así, la relación entre ambas disciplinas es muy fuerte....</p>
+                    <a href="https://www.xataka.com/otros/pensabamos-que-aprender-matematicas-a-traves-programacion-funcionaba-estabamos-equivocados" class="box_link">LEER MÁS</a>
+                </div>     
+            </div>
+        </section>
+
+        <br>
+        <br>
+
+    </main>
+    
+</body>
+</html>

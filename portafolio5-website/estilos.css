@@ -1,0 +1,258 @@
+@keyframes saltoBoton {
+  0% {
+    transform: scale(1) rotate(-5deg);
+    color: white;
+  }
+  33.3% {
+    transform: scale(1.05) rotate(5deg);
+    color: #c93609;
+  }
+  66.6% {
+    transform: scale(1.05) rotate(-5deg);
+    color: #c93609;
+  }
+  100% {
+    transform: scale(1) rotate(5deg);
+    color: white;
+  }
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.encabezado {
+  margin: 0;
+  padding: 0;
+}
+.encabezado_cont {
+  width: 100%;
+  height: 50vh;
+  padding-top: 20px;
+  padding-left: 20px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8431372549) 0%, rgba(7, 5, 3, 0.8156862745) 100%), url("/portafolio5-website/images/computador.jpg");
+  background-size: cover;
+  background-position-y: 85%;
+}
+.encabezado_title {
+  font-size: 60px;
+  letter-spacing: 5px;
+  padding: 100px 0px 0px 10px;
+  margin: 0px;
+  color: white;
+}
+.encabezado_parrafo {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+  padding-left: 15px;
+  color: white;
+}
+
+.perfil {
+  margin: 100px 0px;
+  display: flex;
+  align-items: center;
+}
+.perfil_imagen {
+  border-radius: 50%;
+  margin: 20px 40px;
+}
+.perfil_container {
+  margin-left: 40px;
+}
+.perfil_container_nombre {
+  background-color: #c93609;
+  letter-spacing: 10px;
+  margin: 5px;
+  padding-top: 10px;
+  font-size: 80px;
+  color: white;
+}
+.perfil_container_p-1 {
+  color: rgba(68, 65, 65, 0.8901960784);
+  font-size: 20px;
+  padding: 5px;
+  margin: 0px;
+}
+.perfil_container_p {
+  font-size: 20px;
+  padding: 5px;
+  margin: 0px;
+}
+.perfil_redes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about {
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6156862745) 0%, rgba(0, 0, 0, 0.5960784314) 100%), url("/portafolio5-website/images/luz.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: 30%;
+}
+.about_title {
+  padding-top: 20px;
+  color: white;
+  font-size: 40px;
+}
+.about_p {
+  font-size: 20px;
+  margin: 10px;
+  color: white;
+}
+
+hr {
+  width: 40%;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.estadisticas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  margin: auto;
+  gap: 20px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #c93609;
+  color: white;
+}
+.estadisticas-elemento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.estadisticas-elemento h3 {
+  font-size: 30px;
+  margin: 10px;
+  padding: 0px;
+}
+
+.boton {
+  text-align: center;
+  padding-top: 20px;
+}
+.boton_btn {
+  background: rgba(255, 209, 117, 0.6352941176);
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 900;
+  color: #c93609;
+  font-size: 20px;
+  border: none;
+}
+.boton_btn:hover {
+  background: black;
+  cursor: pointer;
+  animation: saltoBoton 600ms 200ms linear alternate infinite;
+}
+
+.ubicacion-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 20vh;
+  margin: auto;
+  border-radius: 20px;
+  background-color: rgba(193, 196, 195, 0.5764705882);
+  color: #c93609;
+  padding: 10px;
+}
+.ubicacion-perfil-location {
+  margin-left: -40px;
+}
+.ubicacion-perfil-texto {
+  font-size: 18px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+  background-color: #c93609;
+  margin-top: 30px;
+}
+.galeria_btn {
+  padding: 10px;
+}
+.galeria_btn:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.galeria_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 10px;
+}
+.galeria_container img {
+  transition: ease 0.3s;
+}
+.galeria_container img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.linea_noticia {
+  width: 80%;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.noticias {
+  width: 35%;
+}
+.noticias_title {
+  background-color: #c93609;
+  letter-spacing: 10px;
+  padding-top: 10px;
+  font-size: 80px;
+  color: white;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(193, 196, 195, 0.5764705882);
+}
+.card_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_container_box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 25%;
+  height: 50vh;
+  margin: 20px;
+  padding: 30px 10px 10px 10px;
+  border-radius: 60px;
+}
+.card_container_box h3 {
+  color: #c93609;
+  font-size: 15px;
+}
+.card_container_box a {
+  color: #c93609;
+}/*# sourceMappingURL=estilos.css.map */

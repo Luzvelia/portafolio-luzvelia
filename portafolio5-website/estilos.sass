@@ -1,0 +1,260 @@
+$colorPrincipal: #c93609
+$colorSecundario: #c1c4c393
+    
+@mixin rowCenter()
+    display: flex
+    justify-content: center
+    align-items: center
+    
+@mixin boton()
+    background: #ffd175a2
+    margin: 10px
+    padding: 10px 20px
+    border-radius: 15px
+    text-decoration: none
+    text-align: center
+    font-weight: 900
+    color: $colorPrincipal
+
+@keyframes saltoBoton
+    0%
+        transform: scale(1.0) rotate(-5deg)
+        color: white
+
+    33.3%
+        transform: scale(1.05) rotate(5deg)
+        color: $colorPrincipal
+
+    66.6%
+        transform: scale(1.05) rotate(-5deg)
+        color: $colorPrincipal
+        
+    100%
+        transform: scale(1.0) rotate(5deg)
+        color: white
+
+
+    
+body
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    margin: 0
+    padding: 0
+    overflow-x: hidden     
+
+.encabezado
+    margin: 0
+    padding: 0
+    &_cont
+        width: 100%
+        height: 50vh
+        padding-top: 20px
+        padding-left: 20px
+        background-image: linear-gradient(180deg, #000000d7 0%, #070503d0  100%), url("/portafolio5-website/images/computador.jpg")
+        background-size: cover
+        background-position-y: 85% 
+
+    &_title
+        font-size: 60px
+        letter-spacing: 5px
+        padding: 100px 0px 0px 10px
+        margin: 0px
+        color: white
+        
+    &_parrafo
+        font-size: 20px
+        font-weight: 300
+        margin: 0
+        padding-left: 15px
+        color: white      
+        
+.contenedor_perfil
+
+.perfil
+    margin: 100px 0px
+    display: flex
+    align-items: center
+
+    &_imagen
+        border-radius: 50%
+        margin: 20px 40px      
+    &_container
+        margin-left: 40px
+        &_nombre
+            background-color: $colorPrincipal
+            letter-spacing: 10px
+            margin: 5px
+            padding-top: 10px
+            font-size: 80px
+            color: white           
+        &_p-1
+            color: #444141e3
+            font-size: 20px
+            padding: 5px
+            margin: 0px
+
+        &_p
+            font-size: 20px
+            padding: 5px
+            margin: 0px
+
+    &_redes
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        &_name
+        &_user
+
+.about  
+    text-align: center
+    margin: auto
+    padding-bottom: 20px
+    width: 100%
+    height: 50vh
+    background-image: linear-gradient(180deg, #0000009d 0%, #00000098  100%), url("/portafolio5-website/images/luz.jpeg")
+    background-attachment: fixed
+    background-size: cover
+    background-position-y: 30%
+
+    &_title
+        padding-top: 20px
+        color: white
+        font-size: 40px
+    &_p   
+        font-size: 20px
+        margin: 10px
+        color: white
+
+
+hr
+    width: 40% 
+    padding-top: 0px
+    margin-top: 0px
+
+.estadisticas
+    @include rowCenter()
+    width: 20%
+    margin: auto
+    gap: 20px
+    padding: 10px 30px
+    border-radius: 20px
+    background-color: $colorPrincipal
+    color: white
+    &-elemento
+        display: flex
+        flex-direction: column
+        align-items: center
+        & h3
+            font-size: 30px
+            margin: 10px
+            padding: 0px
+
+.boton
+    text-align: center
+    padding-top: 20px
+    
+
+    &_btn
+        @include boton()
+        font-size: 20px
+        border: none
+
+    
+    &_btn:hover
+        background: black
+        cursor: pointer
+        animation: saltoBoton 600ms 200ms linear alternate infinite
+
+
+.ubicacion-perfil
+    @include rowCenter()
+    width: 25%
+    height: 20vh 
+    margin: auto 
+    border-radius: 20px
+    background-color: $colorSecundario
+    color: $colorPrincipal
+    padding: 10px
+    &-location
+        margin-left: -40px
+    
+    &-texto
+        font-size: 18px
+
+.galeria
+    @include rowCenter()
+    width: 100%
+    height: 40vh
+    background-color: $colorPrincipal
+    margin-top: 30px
+    &_btn
+        padding: 10px
+
+    &_btn:hover
+        transform: scale(1.3)
+        cursor: pointer
+
+    &_container
+        display: flex
+        justify-content: space-between
+        gap: 30px
+        padding: 10px
+        
+        & img
+            transition: ease .3s
+
+        & img:hover
+            transform: scale(1.3)
+            cursor: pointer
+
+
+.linea_noticia
+    width: 80% 
+    padding-top: 0px
+    margin-top: 0px
+
+.noticias
+    width: 35%  
+    &_title
+        background-color: $colorPrincipal
+        letter-spacing: 10px
+        padding-top: 10px
+        font-size: 80px
+        color: white
+
+
+.card
+    @include rowCenter()
+    width: 100%
+    background-color: $colorSecundario 
+    &_container
+        display: flex
+        justify-content: space-between
+        align-items: center 
+    
+    
+
+        &_box
+            display: flex
+            align-items: center
+            flex-direction: column
+            background-color: white
+            width: 25%
+            height: 50vh
+            margin: 20px
+            padding: 30px 10px 10px 10px
+            border-radius: 60px
+    
+            & h3
+                color: $colorPrincipal
+                font-size: 15px   
+            & a
+                color: $colorPrincipal
+
+
+
+
+
+
+
+
+
