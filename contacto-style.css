@@ -258,7 +258,7 @@ body{
 }
 
 /* Responsive */
-@media (max-width: 768px){
+@media (max-width: 800px){
     .logo > img{
         width: 80px;
     }
@@ -484,7 +484,7 @@ body{
     } 
 }
 
-@media (max-width: 320px){
+@media (max-width: 480px){
     .logo > img{
         width: 80px;
     }
