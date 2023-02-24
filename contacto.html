@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto-style.css">
+    <link rel="icon" type="" href="/imagenes/favicon.png"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de opciones del menu-->
+    <nav class="boxMenu">
+        <div class="logo" data-aos="fade-down" data-aos-duration="1000">
+            <img src="/imagenes/logo.png" width="100px" alt="">
+        </div>
+        
+        <div id="cajaMenu" class="cajaMenu">
+            <img class="burger" id="burger" src="/imagenes/burger.png" alt=""  data-aos="fade-down" data-aos-duration="1000">
+            
+            <ul id="listaMenu" class="listaMenu" data-aos="fade-down" data-aos-duration="1000">
+                
+                <a href="/index.html"><li class="lista">Inicio</li></a>
+                <a href="/about.html"><li class="lista">Sobre mi</li></a>
+                <a href="/portafolio.html"><li class="lista">Portafolio</li></a>
+                <a href="/contacto.html"><li class="lista">Contacto</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Titulo contacto -->
+    <div class="boxTitle">
+        <h1 class="title">Contacto.</h1>
+    </div>
+    
+    <!-- Caja con informacion de contacto -->
+    <section class="boxContacto">
+
+        <div class="cardDatos" data-aos="fade-rigth" data-aos-duration="2000">
+            <div class="cajaInfo">
+                <div>
+                    <img class="imgIcon" src="/imagenes/telefono.png" alt="">
+                    <h2 class="titleDatos">Teléfono</h2>
+                </div>
+                <p class="parrafoDatos">(+57) 318-465-80-80 </p>
+            </div>
+
+            <div class="cajaInfo">
+                <div>
+                    <img class="imgIcon" src="/imagenes/email.png" alt="">
+                    <h2 class="titleDatos">Email</h2>
+                </div>
+                <p class="parrafoDatos">luzvelia.ene@gmail.com </p>
+            </div>
+
+            <div class="cajaInfo">
+                <div>
+                    <img class="imgIcon" src="/imagenes/ubicacion.png" alt="">
+                    <h2 class="titleDatos">Ubicacion</h2>
+                </div>
+                <p class="parrafoDatos">Cali, Colombia</p>
+            </div>
+        </div>
+
+        <div class="cardInput" data-aos="fade-rigth" data-aos-duration="2000">
+            <div class="cajaInputPrimera">
+                <input id="inputNombre" type="text" placeholder="Nombre">
+                <input id="inputEmail" type="email" placeholder="Email" name="" id="">
+            </div>
+
+            <div  class="cajaInputSegunda">
+                <input id="inputProyecto" type="text" placeholder="Proyecto" >
+                <p><textarea id="inputMensaje" type="text" placeholder="Mensaje" ></textarea></p>
+            </div>
+
+            <div class="cajaBoton">
+                <button id="btn" class="enviar">Enviar</button>
+            </div>
+
+            <div class="mensaje-container" id="mensaje">  
+                <div class="mensaje">
+                    <p>Información enviada 😎</p>
+                    <button id="btnCerrar" class="btnCerrar">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div>
+            <img class="imgFooter" src="/imagenes/logo.png" width="100px" alt="">
+        </div>
+
+        <div class="boxIconFooter">
+            <a href="https://github.com/Luzvelia"><img  class="iconFooter" src="/imagenes/github logo.png" alt=""></a>
+            <a href="https://twitter.com/luzvelia_n"><img  class="iconFooter"  src="/imagenes/twitterfooter.png" alt=""></a>
+            <a href="https://www.instagram.com/luzvelia.n"><img  class="iconFooter"  src="/imagenes/instagramfooter.png" alt=""></a>
+        </div>
+
+        <div class="menuFooter">
+            <ul>
+                <a href="/index.html"><li>Inicio</li></a>
+                <a href="/about.html"><li>Sobre mi</li></a>
+                <a href="/portafolio.html"><li>Portafolio</li></a>
+                <a href="/contacto.html"><li>Contacto</li></a>
+            </ul>
+        </div>
+    </footer>   
+</body>
+
+<!-- Lista menu -->
+<script>
+    let menu = document.getElementById("listMenu");
+    let burger = document.getElementById("burger");
+    let cajaMenu = document.getElementById("cajaMenu");
+    
+
+    burger.addEventListener("click", openMenu,true);
+
+    function openMenu(){
+        listaMenu.classList.toggle('active');
+        cajaMenu.classList.toggle('active');
+    }
+</script>
+
+<!-- Efectos de animacion -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!-- Boton de enviar informacion -->
+<script src="/contacto-enviar.js"></script>
+</html>
