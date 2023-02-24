@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Luzvelia</title>
+    <link rel="stylesheet" href="calculadora-styles.css">
+</head>
+<body>
+    <div>
+        <h1>Calculadora</h1>        
+    </div>
+    <div class="container">
+        <div id="operacionRealizada">0</div>
+        <div id="textoResultado"></div>
+
+        <div class="fila">
+            <button class="tecla" onclick="operador('1')">1</button>
+            <button class="tecla" onclick="operador('2')">2</button>
+            <button class="tecla" onclick="operador('3')">3</button>
+            <button class="tecla" onclick="operacion('*')">x</button>
+        </div>
+
+        <div class="fila">
+            <button class="tecla" onclick="operador('4')">4</button>
+            <button class="tecla" onclick="operador('5')">5</button>
+            <button class="tecla" onclick="operador('6')">6</button>
+            <button class="tecla" onclick="operacion('-')">-</button>
+        </div>
+
+        <div class="fila">
+            <button class="tecla" onclick="operador('7')">7</button>
+            <button class="tecla" onclick="operador('8')">8</button>
+            <button class="tecla" onclick="operador('9')">9</button>
+            <button class="tecla" onclick="operacion('+')">+</button>
+        </div>
+
+        <div class="fila">
+            <button class="tecla" onclick="limpiar()">AC</button>
+            <button class="tecla" onclick="operador('0')">0</button>
+            <button class="tecla" onclick="calculo()">=</button>
+            <button class="tecla" onclick="operacion('/')">/</button>
+        </div>
+
+    </div>
+
+    <script type="text/Javascript" src="/portafolio6-calculadora/calculadora-main.js"></script>
+</body>
+</html>
