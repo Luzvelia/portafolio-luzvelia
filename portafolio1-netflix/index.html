@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/netflix.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Netflix</title>
+</head>
+
+<body class="w-full">
+    <!-- Encabezado -->
+    <header class="fondo pt-6 pl-5 pr-10">
+    
+    <!-- Logo, acciones de usuario -->
+        <div class="items-start flex flex-row justify-between">
+            <img src="/portafolio1-netflix/images/logonetflix.png" width="150px"  class="pl-5">
+            
+            <div class="text-xl pr-10" >
+                <select class="text-base border border-solid border-white rounded-[3px] whitespace-nowrap bg-black text-white font-normal mr-5 py-1.5 px-2.5 ">
+                    <!-- <img src="/images/world.png" width="100px" alt=""> -->
+                    <option class="text-base rounded-[3px]">Español</option>
+                    <option class="text-base rounded-[3px]">Ingles</option>
+                </select>
+                <a href="/portafolio1-netflix/login.html" class="text-base	py-1.5 px-3.5 bg-[#e50914] font-normal rounded-[3px]">Iniciar sesión</a>
+            </div>
+        </div>
+
+    <!-- titulo-->
+        <div class="mt-40 mb-5 flex  flex-col text-center">
+            <h1 class="title-principal text-[49px] leading-none	font-semibold max-w-[50%]">Películas y series ilimitadas y mucho más</h1>
+            <h2 class=" mt-5 mb-7 text-[26px] font-normal	">Disfruta donde quieras. Cancela cuando quieras.</h2>
+            <p class="text-[19px]">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+        </div>
+
+    <!-- Email, ingresar-->
+        <div class="margin mt-5 flex justify-center items-center text-center max-w-[55%]">
+            <input type="email" placeholder="Email" class="py-4 pl-1 text-lg min-w-[70%] border border-solid border-gray-500 focus-visible:ring">
+            <button  class="py-4 border border-solid border-black bg-[#e50914] text-2xl min-w-[30%]">Comenzar</button>
+    
+        </div>
+    </header>
+
+    <div class="borde"></div>
+
+    <!-- Caja uno -->
+    <section class="w-full py-5 px-10 bg-black flex justify-between text-white items-center">
+        <!-- Title -->
+        <div class="pl-24">
+            <h1 class="title text-[50px] font-semibold mb-2 ">Disfruta en tu TV</h1>
+            <h2 class="text-2xl max-w-[77%]">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</h2>
+        </div>
+
+        <!-- Video container -->
+        <div class="contenedor relative">
+            <img class="absolute bottom-6 right-24" src="/portafolio1-netflix/images/tv.png" >
+
+            <video class="video absolute top-9 w-[70%] h-[67%]" autoplay playsinline muted loop >
+                <source src="/portafolio1-netflix/images/video-tv-0819.m4v" type="video/mp4"  >
+            </video>
+        </div>
+    </section>
+
+    <div class="borde"></div>
+
+    <!-- Caja dos -->
+    <section  class="bg-black flex justify-between text-white">
+
+        <div class="relative mt-5 mb-12">
+            <img class="pl-16" src="/portafolio1-netflix/images/tlfstranger.jpg" width="570px">
+
+            <div class="cajastranger py-1.5 px-5 bg-black  border border-solid border-neutral-400 rounded-[15px] flex">
+                <div>
+                    <img class="flex items-start " src="/portafolio1-netflix/images/stranger.png" width="60px" alt="">
+                </div>
+
+                <div class=" mt-4 ml-5">
+                    <div class="text-l"><b>Stranger Things</b></div>
+                    <div class="text-base text-blue-700">Descargando...</div>
+                </div>
+
+                <div class="pl-10 pt-2">
+                    <img class="h-10 w-10 mt-2" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" width="70px"  alt="">
+                </div>
+            </div>
+
+            
+        </div>
+        
+        <!-- Title -->
+        <div class="flex flex-col items-start justify-center min-w-[50%] max-w-[10%] ">
+            <h1 class="title text-[50px]  leading-none	font-semibold  max-w-[75%] ">Descarga tus series para verlas offline</h1>
+            <h2 class="mt-5 text-2xl max-w-[75%]">Guarda tu contenido favorito y tendrás siempre algo para ver.</h2>
+        </div>
+
+    </section>
+
+    <div class="borde"></div>
+
+    <!-- Caja tres -->
+    <section class="py-8 px-8 bg-black flex justify-between text-white items-center">
+        <!-- Title -->
+        <div class="pl-24 ">
+            <h1 class="title text-[50px]  leading-none	font-semibold mb-5 ">Disfruta donde quieras</h1>
+            <h2 class="text-[25px] max-w-[80%]">Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo adicional.</h2>
+        </div>
+
+        <!-- Video contenedor -->
+        <div class="mt-5 contenedor relative ">
+
+            <video class="video absolute left-1 top-8 w-[66%] h-[45%]" autoplay playsinline muted loop >
+                <source class="" src="/portafolio1-netflix/images/videodos.m4v" type="video/mp4"  >
+            </video>
+
+            
+            <img class="absolute right-20" src="/portafolio1-netflix/images/tvdos.png" width="1200px" alt="">                    
+        </div>
+    </section>
+
+    <div class="borde"></div>
+
+    <!-- Caja cuatro -->
+    <section  class="py-20 px-12 bg-black flex justify-between text-white items-center">
+        <div>
+            <img class="pl-10" src="/portafolio1-netflix/images/niños.png" width="550px" alt="">
+
+        </div>
+        
+        <!-- Title -->
+        <div class="flex flex-col items-start justify-center min-w-[50%] max-w-[10%] ">
+            <h1 class="title text-[50px]  leading-none	font-semibold  max-w-[80%] ">Crea perfiles para niños</h1>
+            <h2 class="mt-5 text-2xl max-w-[84%]">Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.</h2>
+        </div>
+    </section>
+
+    <div class="borde"></div>
+
+    <!-- Preguntas frecuentes -->
+    <section class="py-10 px-12 bg-black">
+
+        <!-- Titulo -->
+        <div class="lista w-[80%] pt-10 pb-20">
+            <h1 class="title-principal text-[50px] leading-none	font-semibold max-w-[50%]">Preguntas frecuentes</h1>
+        </div>
+
+        <!-- Preguntas en la lista -->
+        <ul class="lista w-[70%] flex flex-col items-center justify-center">
+
+            <li class="lista-container">
+                <button class="flex relative bg-[#303030] py-5 px-10 mb-1 w-[100%] text-2xl text-start">
+                    ¿Qué es Netflix?
+                    
+                    <img class="open" src="/portafolio1-netflix/images/open.png" width="30px" alt="">
+                </button>
+    
+                <div class="texto-lista p-0 bg-[#303030] flex items-center text-start text-2xl">
+                    Netflix es un servicio de streaming que ofrece una gran variedad de películas, series y documentales premiados en casi cualquier pantalla conectada a internet.
+                    <br>
+                    <br>
+                    Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!
+                </div>
+            </li>
+
+            <div class="borde1"></div>
+            
+            <li class="lista-container">
+                <button class="flex relative bg-[#303030] py-5 px-10 mb-1 w-[100%] text-2xl text-start">
+                    ¿Cuánto cuesta Netflix?
+
+                    <img class="open" src="/portafolio1-netflix/images/open.png" width="30px" alt="">
+                </button>
+
+                <div class="texto-lista p-0 bg-[#303030] flex items-center text-start text-2xl">
+                    Disfruta Netflix en tu smartphone, tablet, smart TV, laptop o dispositivo de streaming, todo por una tarifa plana mensual. Planes desde $ 16.900 hasta $ 38.900 al mes. Sin costos adicionales ni contratos.
+                </div>
+            </li>
+
+            <div class="borde1"></div>
+            
+            <li class="lista-container">
+                <button class="flex relative bg-[#303030] py-5 px-10 mb-1 w-[100%] text-2xl text-start">
+                    ¿Dónde puedo ver Netflix?
+
+                    <img class="open" src="/portafolio1-netflix/images/open.png" width="30px" alt="">
+                </button>
+
+                <div class="texto-lista p-0 bg-[#303030] flex items-center text-start text-2xl">
+                    Disfruta donde quieras, cuando quieras. Inicia sesión en tu cuenta de Netflix para ver contenido al instante a través de netflix.com desde tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con la app de Netflix, como smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos.
+                    <br>
+                    <br>
+                    Además, puedes descargar tus series favoritas con iOS, Android o la app para Windows 10. Con la función de descarga, puedes ver donde vayas y sin conexión a internet. Lleva Netflix contigo adonde sea.
+                </div>
+            </li>
+
+            <div class="borde1"></div>
+            
+            <li class="lista-container">
+                <button class="flex relative bg-[#303030] py-5 px-10 mb-1 w-[100%] text-2xl text-start">
+                    ¿Cómo cancelo?
+
+                    <img class="open" src="/portafolio1-netflix/images/open.png" width="30px" alt="">
+                </button>
+
+                <div class="texto-lista p-0 bg-[#303030] flex items-center text-start text-2xl">
+                    Netflix es flexible. Sin contratos molestos ni compromisos. Cancela la membresía online con solo dos clics. No hay cargos por cancelación. Empieza y termina cuando quieras.
+                </div>
+            </li>
+
+            <div class="borde1"></div>
+            
+            <li class="lista-container">
+                <button class="flex relative bg-[#303030] py-5 px-10 mb-1 w-[100%] text-2xl text-start">
+                    ¿Qué puedo ver en Netflix?
+                    
+                    <img class="open" src="/portafolio1-netflix/images/open.png" width="30px" alt="">
+                </button>              
+
+                <div class="texto-lista p-0 bg-[#303030] flex items-center text-start text-2xl">
+                    Netflix tiene un amplio catálogo de películas, series, documentales, animes, originales premiados y más. Todo lo que quieras ver, cuando quieras.
+                </div>
+            </li>
+
+            
+            <div class="borde1"></div>
+            
+            <li class="lista-container">
+                <button class="flex relative bg-[#303030] py-5 px-10 mb-1 w-[100%] text-2xl text-start">
+                    ¿Es bueno Netflix para los niños?
+
+                    <img class="open" src="/portafolio1-netflix/images/open.png" width="30px" alt="">
+                </button>
+
+                <div class="texto-lista p-0 bg-[#303030] flex items-center text-start text-2xl">
+                    La experiencia de Netflix para niños está incluida en la membresía para que los padres tengan el control mientras los peques disfrutan series y películas familiares en su propio espacio.
+                    <br>
+                    <br>
+                    Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten restringir el contenido que pueden ver los niños en función de la clasificación por edad y bloquear determinados títulos que no quieras que los niños vean.
+                </div>
+            </li>    
+        </ul>
+
+        <!-- Pregunta, Email, ingresar-->
+        <div class="py-20 px-12 " >
+            <div class="pl-5 margin w-[80%]"> 
+                <p class="text-[20px]">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+            </div>
+
+
+            <div class="margin mt-5 flex justify-center items-center text-center max-w-[55%]">
+                <input type="email" placeholder="Email" class="py-4 pl-1 text-lg min-w-[80%] border border-solid border-gray-500 focus-visible:ring">
+                <button  class="py-4 border border-solid border-black bg-[#e50914] text-2xl min-w-[30%]">Comenzar</button>
+
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
+

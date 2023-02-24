@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100;300;500;600;700&family=Ubuntu:wght@300;400;500;600;700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: white
+
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.fondo{
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.61) 0,rgba(0, 0, 0, 0.473)), url("/portafolio1-netflix/images/back.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 50%;
+   
+}
+
+.login{
+    margin: auto;
+    width: 32%;
+    height: 85vh;
+    position: absolute;
+    top: 80px;
+    left: 35%;
+    
+
+}
