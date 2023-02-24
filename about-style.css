@@ -311,7 +311,7 @@ hr{
 
 /* Responsive */
 
-@media (max-width: 768px){
+@media (max-width: 800px){
     .bigBox{
         margin-bottom: 50px;
     }
@@ -526,7 +526,7 @@ hr{
     }   
 }
 
-@media (max-width: 320px){
+@media (max-width: 480px){
     .bigBox{
         margin-bottom: 50px;
     }
