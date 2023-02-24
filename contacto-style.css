@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+    --colorPrincipal: #D6530A;
+    --colorSegundario: rgb(92, 92, 92);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Menu de navegacion */
+.burger{
+    display: none;
+}
+
+.boxMenu{
+    display: flex;
+    justify-content: space-between ;
+    background-color: #d8d7d6ea;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100px;
+    z-index: 2;
+
+}
+
+.listaMenu{
+    display: flex;
+    justify-items: end;
+    flex-direction: row;
+    text-align: right;
+    align-items: center;
+}
+
+.listaMenu > a {
+    text-decoration: none;
+}
+
+.lista{
+    margin-right: 20px;
+    color: var(--colorSegundario);
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.lista:hover{
+    background-color: #fce3d650;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+
+/* Titulo contacto  */
+.boxTitle{
+    margin: 150px 0 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-size: 2.5rem;
+    margin: 0;
+    color: var(--colorSegundario);
+    text-decoration: underline;
+}
+
+.boxContacto{
+    display: grid;
+    grid-template-columns: 25% 600px;
+    justify-content: center;
+}
+
+.cajaInfo > div{
+    display: flex;
+}
+
+.imgIcon{
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+.titleDatos{
+    font-size: 25px;
+    color: var(--colorPrincipal);
+}
+
+.parrafoDatos{
+    color: var(--colorSegundario);
+    margin: 0px 0px 30px 0px;
+    font-size: 18px;
+}
+
+
+.cajaInputPrimera{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.cajaInputSegunda{
+    display: flex;
+    flex-direction: column;
+}
+
+#inputNombre{
+    border: none;
+    border-radius: 30px;
+    padding: 20px 25px;
+    margin-right: 5px;
+    background-color: #d8d7d679;
+    color: var(--colorSegundario);
+    font-size: 20px;
+}
+
+#inputEmail{
+    border: none;
+    border-radius: 30px;
+    padding: 20px 25px;
+    background-color: #d8d7d679;
+    color: var(--colorSegundario);
+    font-size: 20px;
+}
+
+#inputProyecto{
+    border: none;
+    border-radius: 30px;
+    padding: 20px 30px;
+    margin-bottom: 10px;
+    width: calc(100% - 60px);
+    background-color: #d8d7d679;
+    color: var(--colorSegundario);
+    font-size: 20px;
+}
+
+#inputMensaje{
+    border: none;
+    border-radius: 30px;
+    padding: 30px;
+    max-width: calc(100% - 60px);
+    min-width: calc(100% - 60px);
+    background-color: #d8d7d679;
+    color: var(--colorSegundario);
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.cajaBoton{
+    margin-top: 20px;
+    text-align: center;
+}
+.enviar{
+    background-color: #b9b6b4;
+    color: white;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.233);
+}
+
+.enviar:hover{
+    background-color: var(--colorPrincipal);
+    cursor: pointer;
+
+}
+
+.mensaje-container{
+    z-index: 10;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.mensaje{
+    background-color: #d6510ad3;
+    border-radius: 10px;
+    width: 100%;
+    padding: 30px 50px;
+    color: white;
+    text-align: center;
+    align-self: center;
+}
+
+.mensaje >p {
+    font-size: 25px;
+}
+
+.btnCerrar{
+    background-color: #b9b6b4;
+    color: white;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.233);
+    cursor: pointer;
+}
+
+.mostrarMensaje{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/* Footer */
+.footer{
+    z-index: 10;
+    margin-top: 50px;
+    background-color: #acaaa996;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.boxIconFooter{
+    display: flex;
+    flex-direction: row;
+}
+.iconFooter{
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.menuFooter > ul{
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+}
+
+.menuFooter > ul > a{
+    text-decoration: none;
+}
+
+.menuFooter > ul > a > li{
+    list-style: none;
+    font-size: 18px;
+    color:var(--colorSegundario);
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+    .logo > img{
+        width: 80px;
+    }
+
+    .boxMenu{
+        display: flex;
+        position: relative;
+    }
+    
+    .burger{
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        width: 30px;
+        display: block;
+        z-index: 4;
+    }
+
+    .cajaMenu.active{
+        background-color: #fff9f9ee;
+        border-bottom-left-radius: 5px;
+        z-index: 2;
+        width: 100%;
+        min-height: 80vh;
+    }
+
+    .listaMenu{
+        display: none;
+    }
+
+    .listaMenu.active{
+        display: block;
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .listaMenu > a {
+        text-decoration: none;
+        margin-top: 45px;
+    } 
+
+    .lista{
+        margin: 15px 0px;
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    .lista:hover{
+        background-color: #acaaa93f;
+        padding: 10px;
+        border-radius: 5px;
+        transform: scale(1.1);
+    }
+
+    /* Titulo contacto  */
+    .boxTitle{
+        margin: 50px 0 50px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .title{
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .boxContacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cajaInfo > div{
+        display: flex;
+    }
+
+    .imgIcon{
+        width: 40px;
+        height: 40px;
+        align-self: center;
+    }
+    .titleDatos{
+        font-size: 24px;
+    }
+
+    .parrafoDatos{
+        margin: 0px 0px 10px 0px;
+        font-size: 18px;
+    }
+
+    .cajaInputPrimera{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .cajaInputSegunda{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #inputNombre{
+        border: none;
+        border-radius: 20px;
+        padding: 15px 20px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    #inputEmail{
+        border: none;
+        border-radius: 20px;
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+
+    #inputProyecto{
+        border: none;
+        border-radius: 20px;
+        padding: 15px 20px;
+        margin-bottom: 0px;
+        width: calc(100% - 40px);
+        font-size: 18px;
+    }
+
+    #inputMensaje{
+        border: none;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px 0px;
+        max-width: calc(100% - 40px);
+        min-width: calc(100% - 40px);
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;;
+    }
+
+    .cajaBoton{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .enviar{
+        padding: 13px 20px;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+
+    .mensaje-container{
+        z-index: 10;
+        display: flex;
+        opacity: 0;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .mensaje{
+        border-radius: 5px;
+        width: 100%;
+        padding: 30px 50px;
+        color: white;
+        text-align: center;
+        align-self: center;
+    }
+
+    .mensaje >p {
+        font-size: 23px;
+    }
+
+    .btnCerrar{
+        padding: 13px 20px;
+        border: none;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .mostrarMensaje{
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+    /* Footer */
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    .boxIconFooter{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .iconFooter{
+        padding: 0px;
+        margin-left: 0px;
+
+    }
+
+    .menuFooter > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .menuFooter > ul > a > li{
+        font-size: 12px;
+        padding: 5px;
+        padding-inline-start: none;
+    } 
+}
+
+@media (max-width: 320px){
+    .logo > img{
+        width: 80px;
+    }
+
+    .boxMenu{
+        display: flex;
+        position: relative;
+    }
+    
+    .burger{
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        width: 30px;
+        display: block;
+        z-index: 4;
+    }
+
+    .cajaMenu.active{
+        background-color: #fff9f9ee;
+        border-bottom-left-radius: 5px;
+        z-index: 2;
+        width: 100%;
+        min-height: 80vh;
+    }
+
+    .listaMenu{
+        display: none;
+    }
+
+    .listaMenu.active{
+        display: block;
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .listaMenu > a {
+        text-decoration: none;
+        margin-top: 45px;
+    } 
+
+    .lista{
+        margin: 15px 0px;
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    .lista:hover{
+        background-color: #acaaa93f;
+        padding: 10px;
+        border-radius: 5px;
+        transform: scale(1.1);
+    }
+
+    /* Titulo contacto  */
+    .boxTitle{
+        margin: 50px 0 50px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .title{
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .boxContacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cajaInfo > div{
+        display: flex;
+    }
+
+    .imgIcon{
+        width: 40px;
+        height: 40px;
+        align-self: center;
+    }
+    .titleDatos{
+        font-size: 24px;
+    }
+
+    .parrafoDatos{
+        margin: 0px 0px 10px 0px;
+        font-size: 18px;
+    }
+
+    .cajaInputPrimera{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .cajaInputSegunda{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #inputNombre{
+        border: none;
+        border-radius: 20px;
+        padding: 15px 20px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    #inputEmail{
+        border: none;
+        border-radius: 20px;
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+
+    #inputProyecto{
+        border: none;
+        border-radius: 20px;
+        padding: 15px 20px;
+        margin-bottom: 0px;
+        width: calc(100% - 40px);
+        font-size: 18px;
+    }
+
+    #inputMensaje{
+        border: none;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px 0px;
+        max-width: calc(100% - 40px);
+        min-width: calc(100% - 40px);
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;;
+    }
+
+    .cajaBoton{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .enviar{
+        padding: 13px 20px;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+
+    .mensaje-container{
+        z-index: 10;
+        display: flex;
+        opacity: 0;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .mensaje{
+        border-radius: 5px;
+        width: 100%;
+        padding: 30px 50px;
+        color: white;
+        text-align: center;
+        align-self: center;
+    }
+
+    .mensaje >p {
+        font-size: 23px;
+    }
+
+    .btnCerrar{
+        padding: 13px 20px;
+        border: none;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .mostrarMensaje{
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+    /* Footer */
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    .boxIconFooter{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .iconFooter{
+        padding: 0px;
+        margin-left: 0px;
+
+    }
+
+    .menuFooter > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .menuFooter > ul > a > li{
+        font-size: 12px;
+        padding: 5px;
+        padding-inline-start: none;
+    } 
+}
