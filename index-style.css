@@ -21,7 +21,7 @@ body{
 header{
     background: #076585;
     background: -webkit-linear-gradient(to right, #fff, #acaaa9);  
-    background: linear-gradient(to right, rgba(255, 247, 247, 0.767), #b8b8b8c7), url(/imagenes/fondoluz.png);
+    background: linear-gradient(to right, rgba(255, 247, 247, 0.767), #b8b8b8c7), url(imagenes/fondoluz.png);
     background-position-y: 10%;
     background-attachment: fixed;
     position: relative;
